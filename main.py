@@ -13,7 +13,7 @@ guessed_states = []
 
 while len(guessed_states) < 27:
     answer_state = screen.textinput(
-        "Guess the state", prompt="What's another state's name?"
+        f"{len(guessed_states)}/27 Completed", prompt="What's another state's name?"
     ).title()
 
     if answer_state == "Exit":
